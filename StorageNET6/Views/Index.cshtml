@@ -1,0 +1,15 @@
+﻿@model List<string>  
+ @{
+     ViewBag.Title = "Index";
+ }
+
+ <h2>Index</h2>
+ <form action="@Url.Action("Upload")" method="post" enctype="multipart/form-data">
+
+     <label for="file">Filename:</label>
+     <input type="file" name="file" id="file1" />
+     <br />
+     <br />
+     <input type="submit" value="Submit" />
+
+ </form>

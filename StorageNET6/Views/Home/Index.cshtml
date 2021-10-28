@@ -1,0 +1,12 @@
+﻿@model List<Tuple<string, string>>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    @foreach (Tuple<string, string> image in Model)
+    {
+        <img src="@image.Item2." alt="@image.Item1" />
+    }
+</div>
